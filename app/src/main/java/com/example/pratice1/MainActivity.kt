@@ -69,7 +69,6 @@ fun MyApp() {
     }
 }
 
-
 @Composable
 fun OnboardingScreen(onContinueClicked: () -> Unit) {
     Surface {
