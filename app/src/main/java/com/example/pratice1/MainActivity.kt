@@ -16,6 +16,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.text.font.FontWeight
 import com.example.pratice1.ui.theme.Pratice1Theme
 
 class MainActivity : ComponentActivity() {
@@ -50,8 +51,14 @@ fun Greeting(name: String) {
                 .padding(bottom = extraPadding.coerceAtLeast(0.dp))
             ){
                 Text(text = "Hell,")
-                Text(text = name)
+                Text(
+                    text = name,
+                    style = MaterialTheme.typography.h4.copy(
+                        fontWeight = FontWeight.ExtraBold
+                    )
+                )
             }
+
             OutlinedButton(
                 onClick = { expanded = !expanded }
             ) {
